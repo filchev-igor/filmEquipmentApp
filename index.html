@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="lt">
 
 <head>
     <meta charset="utf-8">
@@ -18,8 +18,8 @@
 
     <!--
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
     <link href="css/bootstrap-grid.css" rel="stylesheet">
     <link href="css/bootstrap-grid.rtl.css" rel="stylesheet">
@@ -29,19 +29,17 @@
     <link href="css/bootstrap-utilities.rtl.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap.rtl.css" rel="stylesheet">
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/bootstrap.esm.js"></script>
-    <script src="js/bootstrap.js"></script>
 
     <meta name="theme-color" content="#fafafa">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="js/index.js" defer></script>
 </head>
 
 <body>
 <nav class="navbar d-none d-md-flex" aria-label="Hidden navigation during scrolling">
     <div class="container-fluid justify-content-center">
-        <span class="navbar-text">
+        <span class="display-6">
             Meniu
         </span>
     </div>
@@ -56,11 +54,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="pages/kinotechnika.html">KINAS, KINOTECHNIKA</a>
+                    <a class="nav-link active" aria-current="page" href="/">
+                        <i class="bi bi-house-fill"></i>
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="pages/nuotrauka-ir-animacija.html"> KINO PIRMTAKAI- NUOTRAUKA IR ANIMACIJA</a>
+                    <a class="nav-link" href="pages/nuotrauka-ir-animacija.html"> KINO PIRMTAKAI</a>
                 </li>
 
                 <li class="nav-item">
@@ -87,12 +87,21 @@
                     <a class="nav-link" href="pages/vaizdo-įrašas.html">VAIZDO ĮRAŠAS</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/garso-įrašas.html">GARSO ĮRAŠAS</a>
-                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        ĮRANGA
+                    </a>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/šviesos-įranga.html">ŠVIESOS ĮRANGA</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="pages/garso-įrašas.html">GARSO ĮRAŠAS</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="pages/šviesos-įranga.html">ŠVIESOS ĮRANGA</a>
+                        </li>
+                    </ul>
                 </li>
 
                 <li class="nav-item">
@@ -111,10 +120,28 @@
     </div>
 </nav>
 
-<div class="container">
-    <div class="row">
-        <div class="col">
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col col-sm-9 col-md-9 col-lg-9 col-xl-8 col-xxl-9">
+            <h1 class="display-5 text-center mb-3">KINAS, KINOTECHNIKA</h1>
 
+            <p>
+                Kinas (< gr.), kinematogrãfija, meno šaka, grindžiama judamo filmuoto vaizdo ir garso (kalbos, muzikos, triukšmo) sinteze. Apima ir kino filmų kūrimą, platinimą,
+                demonstravimą. kino tèchnika, įranga kino filmams gaminti ir rodyti. Skirstoma į filmavimo, kino filmo gamybos techniką, filmų rodymo aparatūrą. Filmavimo techniką
+                sudaro kino kameros, operatorių kranai ir vežimėliai, apšvietimo įrenginiai bei prietaisai ir kita. Filmavimo procesui tobulinti ir spartinti naudojami specialūs
+                elektroniniai prietaisai, pvz., judesių valdymo (jais programuojami ir valdomi kino kameros, vežimėlio ar krano judesiai). Kino filmo gamybos techniką sudaro įrašytos
+                kino juostos fotocheminio apdorojimo įranga, nufilmuotos medžiagos atrinkimo ir montavimo, vaizdo ir garso sinchronizavimo, garso įrašymo, kino filmo dauginimo
+                aparatūra. Kino filmo kopija, skirta rodyti žiūrovams, spausdinama naudojant kino kopijavimo aparatus. Jei kino filmas įgarsintas žiūrovams nesuprantama kalba arba
+                jame yra dialogų kitomis kalbomis, daromi titrai. Filmams rodyti naudojamas kino filmų rodymo įrenginys, kurį sudaro 1–3 kino projektoriai, kino juostos tiekimo
+                įrenginys, garso atkūrimo sistema, automatizuotoji valdymo sistema. Pagal atliekamas funkcijas kino projektoriai skirstomi į paprastuosius, universaliuosius ir
+                specialiuosius. Paprastasis kino projektorius susideda iš optinės įrangos, kino juostos traukimo mechanizmo, tiekiamosios ir priimamosios kasečių, kino filmo
+                projektavimo kanalo, garso skaitymo įtaiso, elektros maitinimo ir valdymo įrenginių. Pro projektavimo kanale esančio filmo kadrą praėję projektoriaus šviesos šaltinio
+                spinduliai patenka į jo objektyvą (universalusis projektorius turi 2 arba 3 objektyvų sistemą), kuris kadro vaizdą projektuoja ekrane. Kadrų kaitos dažnis – 25 kadrai per
+                sekundę, todėl sparčiai besikeičiantys nejudantys atvaizdai žmogaus akyje susilieja į vieną judantį atvaizdą. Garso atkūrimo sistemą sudaro procesorius (apdoroja kino
+                filmo garso takelyje įrašytą garsą), stiprintuvai (jų skaičius priklauso nuo garso kanalų), garsiakalbiai. Kai filmas įgarsinamas iš kompaktinio disko, naudojami
+                grotuvai. Kino filmų rodymo įrenginys valdomas matricinėmis, kompiuterizuotomis arba elektroninėmis automatizuotosiomis valdymo sistemomis, kuriomis iš anksto
+                nustatomas salės apšvietimas, užtemdymo trukmė, garso lygis ir visų įrenginių darbas.
+            </p>
         </div>
     </div>
 </div>
@@ -126,7 +153,7 @@
                 Reklama
 
                 <a href="https://www.fotofoto.lt/audio-ir-video/profesionali-filmavimo-technika">
-                    <img class="img-fluid" src="">
+                    <img class="img-fluid" src="img/My%20first%20FlipaClip.gif" alt="Animacija-1">
                 </a>
             </div>
 

@@ -21,6 +21,4 @@ class allScripts {
 const scripts = new allScripts();
 const currentYear = scripts.getCurrentYear();
 
-console.log(currentYear);
-
 document.getElementById("copyright-end").innerHTML = currentYear;
