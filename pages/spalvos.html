@@ -2,49 +2,168 @@
 <html class="no-js" lang="lt">
 
 <head>
-  <meta charset="utf-8">
-  <title>Kinotechnika</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Kinotechnika</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
 
-  <link rel="manifest" href="../site.webmanifest">
-  <link rel="apple-touch-icon" href="../icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="apple-touch-icon" href="../icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!--
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-  <meta name="theme-color" content="#fafafa">
-  
-  <link rel="stylesheet" href="style.css">
+    <link href="../css/bootstrap-grid.css" rel="stylesheet">
+    <link href="../css/bootstrap-grid.rtl.css" rel="stylesheet">
+    <link href="../css/bootstrap-reboot.css" rel="stylesheet">
+    <link href="../css/bootstrap-reboot.rtl.css" rel="stylesheet">
+    <link href="../css/bootstrap-utilities.css" rel="stylesheet">
+    <link href="../css/bootstrap-utilities.rtl.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.rtl.css" rel="stylesheet">
+
+    <meta name="theme-color" content="#fafafa">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="../js/index.js" defer></script>
 </head>
 
 <body>
-<div class="meniu">
-        <h2>Meniu</h2>
-        <p><a href="I%20KINAS,%20KINOTECHNIKA.html"> KINAS, KINOTECHNIKA</a></p>
-        <p><a href="II%20KINO%20PIRMTAKAI-%20NUOTRAUKA%20IR%20ANIMACIJA.html"> KINO PIRMTAKAI- NUOTRAUKA IR ANIMACIJA</a></p>
-        <p><a href="III%20PIRMI%20FILMAI.html">PIRMI FILMAI</a></p>
-        <p><a href="IV%20JUODAI%20BALTAS%20KINAS%20.html"> JUODAI BALTAS KINAS</a></p>
-        <p><a href="VI%20NEBYLUS%20KINAS.htmlhtml">NEBYLUS KINAS</a></p>
-        <p><a href="VII%20GARSO%20EPOCHA.htmlhtml">GARSO EPOCHA</a></p>
-        <p><a href="VIII%20VAIZDO%20ĮRAŠAS.htmlhtml">VAIZDO ĮRAŠAS</a></p>
-        <p><a href="IX%20GARSO%20ĮRAŠAS.html">GARSO ĮRAŠAS</a></p>
-        <p><a href="X%20ŠVIESOS%20ĮRANGA.htmlhtml">ŠVIESOS ĮRANGA</a></p>
-        <p><a href="XI%20REDAGAVIMAS.htmlml">REDAGAVIMAS</a></p>
-        <p><a href="XII%20ŠUOLAIKINĖS%20KINO%20PRAMONĖS%20TENDENCIJOS.htmlJOS.html">ŠUOLAIKINĖS KINO PRAMONĖS TENDENCIJOS</a></p>
-        <p><a href="XIII%20LIETUVOS%20KINO%20INDUSTRIJA.htmlA.html">LIETUVOS KINO INDUSTRIJA</a></p>
-        
+<nav class="navbar d-none d-md-flex" aria-label="Hidden navigation during scrolling">
+    <div class="container-fluid justify-content-center">
+        <span class="display-6">
+            Meniu
+        </span>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" aria-label="Main navigation">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../">
+                        <i class="bi bi-house-fill"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/nuotrauka-ir-animacija.html"> KINO PIRMTAKAI</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/pirmi-filmai.html">PIRMI FILMAI</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/juodai-baltas-kinas.html"> JUODAI BALTAS KINAS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/spalvos.html">SPALVOS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/nebylus-kinas.html">NEBYLUS KINAS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/garso-epocha.html">GARSO EPOCHA</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/vaizdo-įrašas.html">VAIZDO ĮRAŠAS</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        ĮRANGA
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="../pages/garso-įrašas.html">GARSO ĮRAŠAS</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="../pages/šviesos-įranga.html">ŠVIESOS ĮRANGA</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/redagavimas.html">REDAGAVIMAS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/šuolaikinės-kino-pramonės-tendencijos.html">ŠUOLAIKINĖS KINO PRAMONĖS TENDENCIJOS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/lietuvos-kino-industrija.html">LIETUVOS KINO INDUSTRIJA</a>
+                </li>
+            </ul>
         </div>
-         <h1>SPALVOS </h1>
-    Nuo pat kino eros pradžios juodai-baltas kinas dominavo kelis dešimtmečius. Tačiau jau tuo metu buvo bandoma nuspalvinti vaizdą rankiniu būdu. Iki 1906 m.  spalvos separacijos metodas buvo išvystytas, kuris leido gauti taip vadinamą “naturalią spalvą” (Kinemacolor procesas), tai buvo pirmą kartą podemoinstruota publikai 1909m. 
-    Kita technologija (Technicolor) pasireiškė brangumu ir nebuvo plačiai paplitusi. 1932 šis procesas buvo supaprastintas iki trijų spalvų, ir buvo panaudotas filmuojant tokius  šedevrus, kaip  Gone With the Wind, The Wizard of Oz (1939) in Holivude ir A Matter of Life and Death (1946) JK.
-    
+    </div>
+</nav>
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col col-sm-9 col-md-9 col-lg-9 col-xl-8 col-xxl-9">
+            <h1 class="display-5 text-center mb-3">SPALVOS</h1>
+
+            <p>
+                Nuo pat kino eros pradžios juodai-baltas kinas dominavo kelis dešimtmečius. Tačiau jau tuo metu buvo bandoma nuspalvinti vaizdą rankiniu būdu. Iki 1906 m.  spalvos separacijos metodas buvo išvystytas, kuris leido gauti taip vadinamą “naturalią spalvą” (Kinemacolor procesas), tai buvo pirmą kartą podemoinstruota publikai 1909m.
+                Kita technologija (Technicolor) pasireiškė brangumu ir nebuvo plačiai paplitusi. 1932 šis procesas buvo supaprastintas iki trijų spalvų, ir buvo panaudotas filmuojant tokius  šedevrus, kaip  Gone With the Wind, The Wizard of Oz (1939) in Holivude ir A Matter of Life and Death (1946) JK.
+            </p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row justify-content-between text-center bg-secondary bg-gradient text-white pt-1 pb-3">
+            <div class="col-2">
+                Reklama
+
+                <a href="https://www.fotofoto.lt/audio-ir-video/profesionali-filmavimo-technika">
+                    <img class="img-fluid" src="../img/My%20first%20FlipaClip.gif" alt="Animacija-1">
+                </a>
+            </div>
+
+            <div class="col-2">
+                <p class="text-uppercase">Ask us</p>
+
+                <p class="text-capitalize">
+                    <a class="text-decoration-none" href="mailto:georgij.gorlusko@vvk.lt?subject=Kino">georgij gorluško</a>
+                </p>
+
+                <p class="text-capitalize">
+                    <a class="text-decoration-none"  href="mailto:igor.filchev@vvk.lt?subject=Kino">igor filchev</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row text-center bg-dark bg-gradient text-white py-1">
+            <div class="col">
+                &copy; 2020 - <span id="copyright-end"></span>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 
 </html>
