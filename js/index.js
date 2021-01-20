@@ -24,3 +24,4 @@ const currentYear = scripts.getCurrentYear();
 document.getElementById("copyright-end").innerHTML = currentYear;
 
 //TODO update titles of all pages (they have default name)
+//TODO add button with setup via JS
