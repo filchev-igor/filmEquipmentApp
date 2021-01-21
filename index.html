@@ -13,8 +13,8 @@
     <meta property="og:image" content="">
 
     <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
-    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
 
     <!--
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -37,11 +37,25 @@
 </head>
 
 <body>
-<nav class="navbar d-none d-md-flex bg-light bg-gradient" aria-label="Hidden navigation during scrolling">
-    <div class="container-fluid justify-content-center">
-        <span class="display-6">
-            Meniu
-        </span>
+<nav class="bg-light bg-gradient navbar navbar-expand-md" aria-label="Hidden navigation during scrolling">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse pt-2" id="navbarText">
+            <ul class="navbar-nav text-center align-items-center w-100 justify-content-between">
+                <li class="nav-item">
+                    <img src="favicon.png" alt="" width="30px" height="30px">
+                </li>
+
+                <li class="nav-item">
+                    <span class="display-6 text-uppercase">
+                        Kinotechnika
+                    </span>
+                </li>
+
+                <li class="nav-item">
+                    <i role="button" class="bi bi-ui-checks btn btn-outline-danger" style="font-size: 1.4rem;"></i>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 
@@ -51,54 +65,120 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="btn-group" role="group">
-                <a class="btn btn-outline-danger active" role="button" aria-current="page" href="/">
-                    <i class="bi bi-house-fill"></i>
-                </a>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav text-uppercase">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="">
+                        PRADŽIA
+                    </a>
+                </li>
 
-                <a class="btn btn-outline-danger" role="button" href="pages/nuotrauka-ir-animacija.html"> KINO PIRMTAKAI</a>
-
-                <a class="btn btn-outline-danger" role="button" href="pages/pirmi-filmai.html">PIRMI FILMAI</a>
-
-                <a class="btn btn-outline-danger" role="button" href="pages/juodai-baltas-kinas.html"> JUODAI BALTAS KINAS</a>
-
-                <a class="btn btn-outline-danger" role="button" href="pages/spalvos.html">SPALVOS</a>
-
-                <a class="btn btn-outline-danger" role="button" href="pages/nebylus-kinas.html">NEBYLUS KINAS</a>
-
-                <a class="btn btn-outline-danger" role="button" href="pages/garso-epocha.html">GARSO EPOCHA</a>
-
-                <a class="btn btn-outline-danger" role="button" href="pages/vaizdo-įrašas.html">VAIZDO ĮRAŠAS</a>
-
-                <div class="btn-group">
-                    <a class="btn btn-outline-danger dropdown-toggle" role="button" href="#" id="navbarDropdownMenuLink"
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">
-                        ĮRANGA
+                        KINO UŽUOMAZGOS
                     </a>
 
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li>
-                            <a class="dropdown-item" href="pages/garso-įrašas.html">GARSO ĮRAŠAS</a>
+                            <a class="dropdown-item" href="pages/nuotrauka-ir-animacija.html">PIRMOJI ĮRANGA</a>
                         </li>
 
                         <li>
-                            <a class="dropdown-item" href="pages/šviesos-įranga.html">ŠVIESOS ĮRANGA</a>
+                            <a class="dropdown-item" href="pages/pirmi-filmai.html">PIRMI FILMAI</a>
                         </li>
                     </ul>
-                </div>
+                </li>
 
-                <a class="btn btn-outline-danger" role="button" href="pages/redagavimas.html">REDAGAVIMAS</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        SPALVOS
+                    </a>
 
-                <a class="btn btn-outline-danger" role="button" href="pages/šuolaikinės-kino-pramonės-tendencijos.html">ŠUOLAIKINĖS KINO PRAMONĖS TENDENCIJOS</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="pages/juodai-baltas-kinas.html">JUODAI BALTAS VAIZDAS</a>
+                        </li>
 
-                <a class="btn btn-outline-danger" role="button" href="pages/lietuvos-kino-industrija.html">LIETUVOS KINO INDUSTRIJA</a>
-            </div>
+                        <li>
+                            <a class="dropdown-item" href="pages/spalvos.html">SPALVOS KINE ATSIRADIMAS</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        GARSAS
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="pages/nebylus-kinas.html">NEBYLUS KINAS</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="pages/garso-epocha.html">GARSO EPOCHOS PRADŽIA</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        DABARTIS
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="pages/vaizdo-įrašas.html">ŠIUOLAIKINĖ VIDEO ĮRANGA</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="pages/garso-įrašas.html">ŠIUOLAIKINĖ GARSO ĮRANGA</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="pages/šviesos-įranga.html">ŠIUOLAIKINĖ ŠVIESOS ĮRANGA</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href=/pages/redagavimas.html">ŠIUOLAIKINĖ MONTAVIMO ĮRANGA</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="pages/šuolaikinės-kino-pramonės-tendencijos.html">ŠIUOLAIKINĖS KINO TENDENCIJOS</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        LIETUVOJE
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                        <li>
+                            <a class="dropdown-item" href="pages/lietuvos-kino-industrija.html">LIETUVOS KINO INDUSTRIJA</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item d-md-none">
+                    <a class="nav-link" role="button" href="#">
+                        Settings
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
 
-<div class="container py-5">
+<div class="container-fluid">
+
+</div>
+
+<div class="container container-sm py-5">
     <div class="row justify-content-center">
         <div class="col col-sm-9 col-md-9 col-lg-9 col-xl-8 col-xxl-9">
             <h1 class="display-5 text-center mb-3">KINAS, KINOTECHNIKA</h1>
