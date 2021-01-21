@@ -37,7 +37,7 @@
 </head>
 
 <body>
-<nav class="navbar-light bg-light bg-gradient navbar navbar-expand-md py-0" aria-label="Hidden navigation during scrolling">
+<nav class="bg-light bg-gradient navbar navbar-expand-md py-0" aria-label="Hidden navigation during scrolling">
     <div class="container-fluid">
         <div class="collapse navbar-collapse pt-2" id="navbarText">
             <ul class="navbar-nav text-center align-items-center w-100 justify-content-between">
@@ -46,7 +46,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <span class="display-6 text-uppercase">
+                    <span class="nav-link display-6 text-uppercase">
                         Kinotechnika
                     </span>
                 </li>
@@ -187,34 +187,72 @@
                         </h5>
                     </div>
 
-                    <div class="col-md-12 d-flex justify-content-between" id="navbarColorPicker">
+                    <div class="col-md-12 d-flex justify-content-between">
                         <p>
-                            navbar
+                            navbar fonas
                         </p>
 
-                        <div style="width: 2rem; height:2rem;" class="bg-gradient bg-primary text-white rounded-circle"></div>
-                        <div style="width: 2rem; height:2rem;" class="bg-secondary bg-gradient text-white rounded-circle"></div>
-                        <div style="width: 2rem; height:2rem;" class="bg-success bg-gradient text-white rounded-circle"></div>
-                        <div style="width: 2rem; height:2rem;" class="bg-danger bg-gradient text-white rounded-circle"></div>
-                        <div style="width: 2rem; height:2rem;" class="bg-warning bg-gradient text-dark rounded-circle"></div>
-                        <div style="width: 2rem; height:2rem;" class="bg-info bg-gradient text-dark rounded-circle"></div>
-                        <div style="width: 2rem; height:2rem;" class="bg-light bg-gradient text-dark rounded-circle"></div>
-                        <div style="width: 2rem; height:2rem;" class="bg-dark bg-gradient text-white rounded-circle"></div>
+                        <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-primary" id="navbarColorPicker1" autocomplete="off">
+                        <label style="width: 2rem; height:2rem;" class="bg-primary bg-gradient text-white rounded-circle" for="navbarColorPicker1"></label>
+
+                        <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-secondary" id="navbarColorPicker2" autocomplete="off">
+                        <label style="width: 2rem; height:2rem;" class="bg-secondary bg-gradient text-white rounded-circle" for="navbarColorPicker2"></label>
+
+                        <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-success" id="navbarColorPicker3" autocomplete="off">
+                        <label style="width: 2rem; height:2rem;" class="bg-success bg-gradient text-white rounded-circle" for="navbarColorPicker3"></label>
+
+                        <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-danger" id="navbarColorPicker4" autocomplete="off">
+                        <label style="width: 2rem; height:2rem;" class="bg-danger bg-gradient text-white rounded-circle" for="navbarColorPicker4"></label>
+
+                        <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-warning" id="navbarColorPicker5" autocomplete="off">
+                        <label style="width: 2rem; height:2rem;" class="bg-warning bg-gradient text-white rounded-circle" for="navbarColorPicker5"></label>
+
+                        <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-info" id="navbarColorPicker6" autocomplete="off">
+                        <label style="width: 2rem; height:2rem;" class="bg-info bg-gradient text-white rounded-circle" for="navbarColorPicker6"></label>
+
+                        <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-light" id="navbarColorPicker7" autocomplete="off" checked>
+                        <label style="width: 2rem; height:2rem;" class="bg-light bg-gradient text-white rounded-circle" for="navbarColorPicker7"></label>
+
+                        <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-dark" id="navbarColorPicker8" autocomplete="off">
+                        <label style="width: 2rem; height:2rem;" class="bg-dark bg-gradient text-white rounded-circle" for="navbarColorPicker8"></label>
                     </div>
 
-                    <div class="col-md-12 d-flex justify-content-between" id="footerColorPicker">
+                    <div class="col-md-12 d-md-flex justify-content-between">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 d-flex justify-content-between">
                         <p>
-                            footer
+                            footer fonas
                         </p>
 
-                        <div style="width: 2rem; height:2rem;" class="bg-gradient bg-primary text-white rounded-circle"></div>
-                        <div style="width: 2rem; height:2rem;" class="bg-secondary bg-gradient text-white rounded-circle"></div>
-                        <div style="width: 2rem; height:2rem;" class="bg-success bg-gradient text-white rounded-circle"></div>
-                        <div style="width: 2rem; height:2rem;" class="bg-danger bg-gradient text-white rounded-circle"></div>
-                        <div style="width: 2rem; height:2rem;" class="bg-warning bg-gradient text-dark rounded-circle"></div>
-                        <div style="width: 2rem; height:2rem;" class="bg-info bg-gradient text-dark rounded-circle"></div>
-                        <div style="width: 2rem; height:2rem;" class="bg-light bg-gradient text-dark rounded-circle"></div>
-                        <div style="width: 2rem; height:2rem;" class="bg-dark bg-gradient text-white rounded-circle"></div>
+                        <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="primary" id="footerColorToggleConsumer1" autocomplete="off">
+                        <label style="width: 2rem; height:2rem;" class="bg-primary bg-gradient text-white rounded-circle" for="footerColorToggleConsumer1"></label>
+
+                        <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-secondary" id="footerColorToggleConsumer2" autocomplete="off">
+                        <label style="width: 2rem; height:2rem;" class="bg-secondary bg-gradient text-white rounded-circle" for="footerColorToggleConsumer2"></label>
+
+                        <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-success" id="footerColorToggleConsumer3" autocomplete="off">
+                        <label style="width: 2rem; height:2rem;" class="bg-success bg-gradient text-white rounded-circle" for="footerColorToggleConsumer3"></label>
+
+                        <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-danger" id="footerColorToggleConsumer4" autocomplete="off">
+                        <label style="width: 2rem; height:2rem;" class="bg-danger bg-gradient text-white rounded-circle" for="footerColorToggleConsumer4"></label>
+
+                        <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-warning" id="footerColorToggleConsumer5" autocomplete="off">
+                        <label style="width: 2rem; height:2rem;" class="bg-warning bg-gradient text-white rounded-circle" for="footerColorToggleConsumer5"></label>
+
+                        <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-info" id="footerColorToggleConsumer6" utocomplete="off">
+                        <label style="width: 2rem; height:2rem;" class="bg-info bg-gradient text-white rounded-circle" for="footerColorToggleConsumer6"></label>
+
+                        <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-light" id="footerColorToggleConsumer7" autocomplete="off" checked>
+                        <label style="width: 2rem; height:2rem;" class="bg-light bg-gradient text-white rounded-circle" for="footerColorToggleConsumer7"></label>
+
+                        <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-dark" id="footerColorToggleConsumer8" autocomplete="off">
+                        <label style="width: 2rem; height:2rem;" class="bg-dark bg-gradient text-white rounded-circle" for="footerColorToggleConsumer8"></label>
+
                     </div>
                 </div>
             </div>

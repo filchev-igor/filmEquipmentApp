@@ -7,47 +7,58 @@ updateCopyright.updateField();
 
 class SettingsToggleSwitch {
     constructor(settingsInput) {
-        for (const input of settingsInput) {
-            if (input.length) {
-                const id = input[0].parentNode.id;
-                const [elementName,,] = id.split(/(?=[A-Z])/);
+        const radioElementsNames = settingsInput["radioElements"]["suppliers"];
 
-                let elements = document.getElementsByClassName(elementName);
+        for (const radioElementsName of radioElementsNames) {
+            const radioElements = document.getElementsByName(radioElementsName);
 
-                if (!elements.length)
-                    elements = document.querySelectorAll("#footerColorToggleConsumer");
+            const [handledElementsName,,] = radioElementsName.split(/(?=[A-Z])/);
 
-                for (const selector of input) {
-                    const elementClassList = selector.className
-                        .split(" ")
-                        .filter(value => value.includes("bg-") && value !== "bg-gradient");
+            let handledElements = document.getElementsByClassName(handledElementsName);
 
-                    const color = elementClassList[0];
+            if (!handledElements.length) {
+                const id = settingsInput["radioElements"]["consumers"]["footerConsumer"];
 
-                    selector.addEventListener("click", () => this.#handleColorToggle(color, elements));
-                }
+                handledElements = document.querySelectorAll("#" + id);
+            }
+
+            for (const radioElement of radioElements) {
+                const color = radioElement.dataset.bgColor;
+
+                radioElement.labels[0].addEventListener("click", () => this.#handleColorToggle(color, handledElements));
             }
         }
     }
 
-    #handleColorToggle(color, elements) {
-        for (const element of elements) {
-            const elementClassList = element.className
+    #handleColorToggle(color, handledElements) {
+        for (const handledElement of handledElements) {
+            const elementClassList = handledElement.className
                 .split(" ")
                 .filter(value => value.includes("bg-") && value !== "bg-gradient");
 
-            console.log(color);
-
-            element.classList.remove(elementClassList[0]);
-            element.classList.add(color);
+            handledElement.classList.remove(elementClassList[0]);
+            handledElement.classList.add(color);
         }
     }
 }
 
-const navbarColorPicker = document.querySelectorAll("#navbarColorPicker > .bg-gradient");
-const footerColorPicker = document.querySelectorAll("#footerColorPicker > .bg-gradient");
+const NAVBAR_BG_RADIO_NAME = "navbarColorPicker";
+const FOOTER_BG_RADIO_NAME = "footerColorPicker";
 
-const settingsInput = [navbarColorPicker, footerColorPicker];
+const FOOTER_CONSUMER_ID = "footerColorToggleConsumer";
+
+//const navbarColorPicker = document.querySelectorAll("#navbarColorPicker > .bg-gradient");
+//const footerColorPicker = document.querySelectorAll("#footerColorPicker > .bg-gradient");
+
+//const settingsInput = [navbarColorPicker, footerColorPicker];
+const settingsInput = {
+    "radioElements": {
+        "suppliers": [NAVBAR_BG_RADIO_NAME, FOOTER_BG_RADIO_NAME],
+        "consumers": {
+            "footerConsumer": FOOTER_CONSUMER_ID
+        }
+    }
+};
 
 const settingsToggleSwitch = new SettingsToggleSwitch(settingsInput);
 
