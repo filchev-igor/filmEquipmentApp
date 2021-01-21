@@ -33,11 +33,11 @@
     <meta name="theme-color" content="#fafafa">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <script src="js/index.js" defer></script>
+    <script type="module" src="js/index.js" defer></script>
 </head>
 
 <body>
-<nav class="bg-light bg-gradient navbar navbar-expand-md py-0" aria-label="Hidden navigation during scrolling">
+<nav class="navbar-light bg-light bg-gradient navbar navbar-expand-md py-0" aria-label="Hidden navigation during scrolling">
     <div class="container-fluid">
         <div class="collapse navbar-collapse pt-2" id="navbarText">
             <ul class="navbar-nav text-center align-items-center w-100 justify-content-between">
@@ -52,14 +52,16 @@
                 </li>
 
                 <li class="nav-item">
-                    <i role="button" class="bi bi-ui-checks btn btn-outline-danger" style="font-size: 1.4rem;"></i>
+                    <button class="btn btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedSetup" aria-expanded="false" aria-controls="collapsedSetup">
+                        <i class="bi bi-ui-checks" style="font-size: 1.4rem;"></i>
+                    </button>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" aria-label="Main navigation">
+<nav class="navbar navbar-expand-md navbar-light bg-light bg-gradient sticky-top" aria-label="Main navigation">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -165,7 +167,7 @@
                 </li>
 
                 <li class="nav-item d-md-none">
-                    <a class="nav-link" role="button" href="#">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#collapsedSetup" role="button" aria-expanded="false" aria-controls="collapsedSetup">
                         Settings
                     </a>
                 </li>
@@ -173,6 +175,55 @@
         </div>
     </div>
 </nav>
+
+<div class="collapse show" id="collapsedSetup">
+    <div class="card card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5 class="card-title text-capitalize">
+                            spalvos
+                        </h5>
+                    </div>
+
+                    <div class="col-md-12 d-flex justify-content-between" id="navbarColorPicker">
+                        <p>
+                            navbar
+                        </p>
+
+                        <div style="width: 2rem; height:2rem;" class="bg-gradient bg-primary text-white rounded-circle"></div>
+                        <div style="width: 2rem; height:2rem;" class="bg-secondary bg-gradient text-white rounded-circle"></div>
+                        <div style="width: 2rem; height:2rem;" class="bg-success bg-gradient text-white rounded-circle"></div>
+                        <div style="width: 2rem; height:2rem;" class="bg-danger bg-gradient text-white rounded-circle"></div>
+                        <div style="width: 2rem; height:2rem;" class="bg-warning bg-gradient text-dark rounded-circle"></div>
+                        <div style="width: 2rem; height:2rem;" class="bg-info bg-gradient text-dark rounded-circle"></div>
+                        <div style="width: 2rem; height:2rem;" class="bg-light bg-gradient text-dark rounded-circle"></div>
+                        <div style="width: 2rem; height:2rem;" class="bg-dark bg-gradient text-white rounded-circle"></div>
+                    </div>
+
+                    <div class="col-md-12 d-flex justify-content-between" id="footerColorPicker">
+                        <p>
+                            footer
+                        </p>
+
+                        <div style="width: 2rem; height:2rem;" class="bg-gradient bg-primary text-white rounded-circle"></div>
+                        <div style="width: 2rem; height:2rem;" class="bg-secondary bg-gradient text-white rounded-circle"></div>
+                        <div style="width: 2rem; height:2rem;" class="bg-success bg-gradient text-white rounded-circle"></div>
+                        <div style="width: 2rem; height:2rem;" class="bg-danger bg-gradient text-white rounded-circle"></div>
+                        <div style="width: 2rem; height:2rem;" class="bg-warning bg-gradient text-dark rounded-circle"></div>
+                        <div style="width: 2rem; height:2rem;" class="bg-info bg-gradient text-dark rounded-circle"></div>
+                        <div style="width: 2rem; height:2rem;" class="bg-light bg-gradient text-dark rounded-circle"></div>
+                        <div style="width: 2rem; height:2rem;" class="bg-dark bg-gradient text-white rounded-circle"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="container container-sm py-5">
     <div class="row justify-content-center">
@@ -202,7 +253,7 @@
 
 <footer>
     <div class="container-fluid">
-        <div class="row justify-content-between text-center bg-secondary bg-gradient text-white pt-1 pb-3">
+        <div class="row justify-content-between text-center bg-secondary bg-gradient text-white pt-1 pb-3" id="footerColorToggleConsumer">
             <div class="col-2">
                 Reklama
 
@@ -226,7 +277,7 @@
 
         <div class="row text-center bg-dark bg-gradient text-white py-1">
             <div class="col">
-                &copy; 2020 - <span id="copyright-end"></span>
+                &copy; 2020 - <span id="copyrightEnd"></span>
             </div>
         </div>
     </div>
