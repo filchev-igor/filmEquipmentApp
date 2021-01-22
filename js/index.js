@@ -55,12 +55,18 @@ const toggleActiveLink = () => {
     const path = window.location.pathname;
     const page = path.split("/").pop();
 
-    const element = document.querySelectorAll("a[href*='" + page + "']");
+    const element = document.querySelector("a[href*='" + page + "']");
 
-    element[0].classList.add("active");
-    element[0].setAttribute("aria-current", "page");
+    if (element) {
+        element.classList.add("active");
+        element.setAttribute("aria-current", "page");
+    }
+    else {
+        const element = document.querySelector("a[href='index.html']");
+
+        element.classList.add("active");
+        element.setAttribute("aria-current", "page");
+    }
 }
 
 toggleActiveLink();
-
-//TODO update titles of all pages (they have default name)

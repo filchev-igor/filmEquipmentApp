@@ -127,10 +127,14 @@ class StyleSettings {
     #handleTextSize(props) {
         const [textSizeSupplier, textSizeConsumerId] = props;
 
-        const element = document.querySelector("#" + textSizeConsumerId + " p");
-        element.style.fontSize = textSizeSupplier.value + "rem";
+        const elements1 = document.querySelectorAll("#" + textSizeConsumerId + " p");
+        const elements2 = document.querySelectorAll("#" + textSizeConsumerId + " ul.list-group");
 
-        console.log(textSizeSupplier.value + "rem");
+        for (const element of elements1)
+            element.style.fontSize = textSizeSupplier.value + "rem";
+
+        for (const element of elements2)
+            element.style.fontSize = textSizeSupplier.value + "rem";
     }
 }
 
