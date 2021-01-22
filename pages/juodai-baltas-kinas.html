@@ -13,8 +13,8 @@
     <meta property="og:image" content="">
 
     <link rel="manifest" href="../site.webmanifest">
-    <link rel="apple-touch-icon" href="../icon.png">
-    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="../favicon.png">
+    <link rel="icon" href="../favicon.png" sizes="32x32" type="image/png">
 
     <!--
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -33,96 +33,313 @@
     <meta name="theme-color" content="#fafafa">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <script src="../js/index.js" defer></script>
+    <script type="module" src="../js/index.js" defer></script>
 </head>
 
 <body>
-<nav class="navbar d-none d-md-flex" aria-label="Hidden navigation during scrolling">
-    <div class="container-fluid justify-content-center">
-        <span class="display-6">
-            Meniu
-        </span>
-    </div>
-</nav>
-
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" aria-label="Main navigation">
+<nav class="bg-light bg-gradient navbar navbar-expand-md py-0" aria-label="Hidden navigation during scrolling" id="firstNavbarConsumer">
     <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse pt-2" id="navbarText">
+            <ul class="navbar-nav text-center align-items-center w-100 justify-content-between">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../">
-                        <i class="bi bi-house-fill"></i>
-                    </a>
+                    <img src="../favicon.png" alt="Website icon" style="width:6rem; height: 6rem;">
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../pages/nuotrauka-ir-animacija.html"> KINO PIRMTAKAI</a>
+                    <span class="nav-link display-6 text-uppercase">
+                        Kinotechnika
+                    </span>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../pages/pirmi-filmai.html">PIRMI FILMAI</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/juodai-baltas-kinas.html"> JUODAI BALTAS KINAS</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/spalvos.html">SPALVOS</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/nebylus-kinas.html">NEBYLUS KINAS</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/garso-epocha.html">GARSO EPOCHA</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="vaizdo-irasas.html">VAIZDO ĮRAŠAS</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        ĮRANGA
-                    </a>
-
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li>
-                            <a class="dropdown-item" href="garso-irasas.html">GARSO ĮRAŠAS</a>
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" href="sviesos-iranga.html">ŠVIESOS ĮRANGA</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/redagavimas.html">REDAGAVIMAS</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="suolaikines-kino-pramones-tendencijos.html">ŠUOLAIKINĖS KINO PRAMONĖS TENDENCIJOS</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/lietuvos-kino-industrija.html">LIETUVOS KINO INDUSTRIJA</a>
+                    <button class="btn btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedSetup" aria-expanded="false" aria-controls="collapsedSetup">
+                        <i class="bi bi-ui-checks" style="font-size: 1.4rem;"></i>
+                    </button>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<div class="container py-5">
+<nav class="navbar navbar-expand-md navbar-light bg-light bg-gradient sticky-top shadow-sm" aria-label="Main navigation" id="secondNavbarConsumer">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav text-uppercase">
+                <li class="nav-item">
+                    <a class="nav-link" href="../">
+                        PRADŽIA
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        KINO UŽUOMAZGOS
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                        <li>
+                            <a class="dropdown-item" href="../pages/nuotrauka-ir-animacija.html">PIRMOJI ĮRANGA</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="../pages/pirmi-filmai.html">PIRMI FILMAI</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        SPALVOS
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                        <li>
+                            <a class="dropdown-item" href="../pages/juodai-baltas-kinas.html">JUODAI BALTAS VAIZDAS</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="../pages/spalvos.html">SPALVOS KINE ATSIRADIMAS</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        GARSAS
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                        <li>
+                            <a class="dropdown-item" href="../pages/nebylus-kinas.html">NEBYLUS KINAS</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="../pages/garso-epocha.html">GARSO EPOCHOS PRADŽIA</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink4" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        DABARTIS
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
+                        <li>
+                            <a class="dropdown-item" href="../pages/vaizdo-irasas.html">ŠIUOLAIKINĖ VIDEO ĮRANGA</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="../pages/garso-irasas.html">ŠIUOLAIKINĖ GARSO ĮRANGA</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="../pages/sviesos-iranga.html">ŠIUOLAIKINĖ ŠVIESOS ĮRANGA</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="../pages/redagavimas.html">ŠIUOLAIKINĖ MONTAVIMO ĮRANGA</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="../pages/suolaikines-kino-pramones-tendencijos.html">ŠIUOLAIKINĖS KINO TENDENCIJOS</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/lietuvos-kino-industrija.html">
+                        LIETUVOJE
+                    </a>
+                </li>
+
+                <li class="nav-item d-md-none">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#collapsedSetup" role="button" aria-expanded="false" aria-controls="collapsedSetup">
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="collapse" id="collapsedSetup">
+    <div class="card card-body">
+        <div class="row text-center g-4">
+            <div class="col-sm-6 col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">navbar</h5>
+
+                        <h6 class="card-subtitle mb-2 text-muted">background</h6>
+                        <div class="card-text">
+                            <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-primary" id="navbarColorPicker1" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-primary bg-gradient rounded-circle" for="navbarColorPicker1"></label>
+
+                            <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-secondary" id="navbarColorPicker2" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-secondary bg-gradient rounded-circle" for="navbarColorPicker2"></label>
+
+                            <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-success" id="navbarColorPicker3" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-success bg-gradient rounded-circle" for="navbarColorPicker3"></label>
+
+                            <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-danger" id="navbarColorPicker4" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-danger bg-gradient rounded-circle" for="navbarColorPicker4"></label>
+
+                            <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-warning" id="navbarColorPicker5" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-warning bg-gradient rounded-circle" for="navbarColorPicker5"></label>
+
+                            <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-info" id="navbarColorPicker6" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-info bg-gradient rounded-circle" for="navbarColorPicker6"></label>
+
+                            <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-light" id="navbarColorPicker7" autocomplete="off" checked>
+                            <label style="width: 2rem; height:2rem;" class="bg-light bg-gradient rounded-circle" for="navbarColorPicker7"></label>
+
+                            <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-dark" id="navbarColorPicker8" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-dark bg-gradient rounded-circle" for="navbarColorPicker8"></label>
+
+                            <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-white" id="navbarColorPicker9" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-white bg-gradient rounded-circle border" for="navbarColorPicker9"></label>
+                        </div>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Color schemes</h6>
+                        <div class="card-text form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="firstNavbarColorScheme">
+                            <label class="form-check-label" for="firstNavbarColorScheme">first navbar light scheme</label>
+                        </div>
+
+                        <div class="card-text form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="secondNavbarColorScheme">
+                            <label class="form-check-label" for="secondNavbarColorScheme">second navbar light scheme</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">page</h5>
+
+                        <h6 class="card-subtitle mb-2 text-muted">background</h6>
+                        <div class="card-text">
+                            <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-primary" id="pageColorPicker1" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-primary bg-gradient rounded-circle" for="pageColorPicker1"></label>
+
+                            <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-secondary" id="pageColorPicker2" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-secondary bg-gradient rounded-circle" for="pageColorPicker2"></label>
+
+                            <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-success" id="pageColorPicker3" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-success bg-gradient rounded-circle" for="pageColorPicker3"></label>
+
+                            <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-danger" id="pageColorPicker4" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-danger bg-gradient rounded-circle" for="pageColorPicker4"></label>
+
+                            <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-warning" id="pageColorPicker5" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-warning bg-gradient rounded-circle" for="pageColorPicker5"></label>
+
+                            <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-info" id="pageColorPicker6" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-info bg-gradient rounded-circle" for="pageColorPicker6"></label>
+
+                            <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-light" id="pageColorPicker7" autocomplete="off" checked>
+                            <label style="width: 2rem; height:2rem;" class="bg-light bg-gradient rounded-circle" for="pageColorPicker7"></label>
+
+                            <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-dark" id="pageColorPicker8" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-dark bg-gradient rounded-circle" for="pageColorPicker8"></label>
+
+                            <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-white" id="pageColorPicker9" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-white bg-gradient rounded-circle border" for="pageColorPicker9"></label>
+
+                        </div>
+
+                        <h6 class="card-subtitle mb-2 text-muted">text color</h6>
+                        <div class="card-text">
+                            <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-primary" id="pageColorToggleConsumer1" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-primary bg-gradient rounded-circle" for="pageColorToggleConsumer1"></label>
+
+                            <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-secondary" id="pageColorToggleConsumer2" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-secondary bg-gradient rounded-circle" for="pageColorToggleConsumer2"></label>
+
+                            <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-success" id="pageColorToggleConsumer3" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-success bg-gradient rounded-circle" for="pageColorToggleConsumer3"></label>
+
+                            <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-danger" id="pageColorToggleConsumer4" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-danger bg-gradient rounded-circle" for="pageColorToggleConsumer4"></label>
+
+                            <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-warning" id="pageColorToggleConsumer5" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-warning bg-gradient rounded-circle" for="pageColorToggleConsumer5"></label>
+
+                            <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-info" id="pageColorToggleConsumer6" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-info bg-gradient rounded-circle" for="pageColorToggleConsumer6"></label>
+
+                            <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-light" id="pageColorToggleConsumer7" autocomplete="off" checked>
+                            <label style="width: 2rem; height:2rem;" class="bg-light bg-gradient rounded-circle" for="pageColorToggleConsumer7"></label>
+
+                            <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-dark" id="pageColorToggleConsumer8" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-dark bg-gradient rounded-circle" for="pageColorToggleConsumer8"></label>
+
+                            <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-white" id="pageColorToggleConsumer9" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-white bg-gradient rounded-circle border" for="pageColorToggleConsumer9"></label>
+                        </div>
+
+                        <h6 class="card-subtitle mb-2 text-muted">font size</h6>
+                        <div class="card-text">
+                            <label for="fontSizeRange" class="form-label">Font size range</label>
+                            <input type="range" class="form-range" min="0.2" max="5" step="0.2" value="1" id="fontSizeRange">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">footer</h5>
+
+                        <h6 class="card-subtitle mb-2 text-muted">background</h6>
+                        <div class="card-text">
+                            <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-primary" id="footerColorToggleConsumer1" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-primary bg-gradient rounded-circle" for="footerColorToggleConsumer1"></label>
+
+                            <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-secondary" id="footerColorToggleConsumer2" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-secondary bg-gradient rounded-circle" for="footerColorToggleConsumer2"></label>
+
+                            <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-success" id="footerColorToggleConsumer3" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-success bg-gradient rounded-circle" for="footerColorToggleConsumer3"></label>
+
+                            <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-danger" id="footerColorToggleConsumer4" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-danger bg-gradient rounded-circle" for="footerColorToggleConsumer4"></label>
+
+                            <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-warning" id="footerColorToggleConsumer5" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-warning bg-gradient rounded-circle" for="footerColorToggleConsumer5"></label>
+
+                            <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-info" id="footerColorToggleConsumer6" utocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-info bg-gradient rounded-circle" for="footerColorToggleConsumer6"></label>
+
+                            <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-light" id="footerColorToggleConsumer7" autocomplete="off" checked>
+                            <label style="width: 2rem; height:2rem;" class="bg-light bg-gradient rounded-circle" for="footerColorToggleConsumer7"></label>
+
+                            <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-dark" id="footerColorToggleConsumer8" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-dark bg-gradient rounded-circle" for="footerColorToggleConsumer8"></label>
+
+                            <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-white" id="footerColorToggleConsumer9" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-white bg-gradient rounded-circle border" for="footerColorToggleConsumer9"></label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid py-5 bg-white" id="pageConsumer">
     <div class="row justify-content-center">
-        <div class="col col-sm-9 col-md-9 col-lg-9 col-xl-8 col-xxl-9">
+        <div class="col col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
             <h1 class="display-5 text-center mb-3">JUODAI BALTAS KINAS</h1>
 
             <p>
@@ -136,7 +353,7 @@
 
 <footer>
     <div class="container-fluid">
-        <div class="row justify-content-between text-center bg-secondary bg-gradient text-white pt-1 pb-3">
+        <div class="row justify-content-between text-center bg-secondary bg-gradient text-white pt-1 pb-3" id="footerConsumer">
             <div class="col-2">
                 Reklama
 
@@ -149,18 +366,18 @@
                 <p class="text-uppercase">Ask us</p>
 
                 <p class="text-capitalize">
-                    <a class="text-decoration-none" href="mailto:georgij.gorlusko@vvk.lt?subject=Kino">georgij gorluško</a>
+                    <a class="text-decoration-none link-info" href="mailto:georgij.gorlusko@vvk.lt?subject=Kino">georgij gorluško</a>
                 </p>
 
                 <p class="text-capitalize">
-                    <a class="text-decoration-none"  href="mailto:igor.filchev@vvk.lt?subject=Kino">igor filchev</a>
+                    <a class="text-decoration-none link-info" href="mailto:igor.filchev@vvk.lt?subject=Kino">igor filchev</a>
                 </p>
             </div>
         </div>
 
         <div class="row text-center bg-dark bg-gradient text-white py-1">
             <div class="col">
-                &copy; 2020 - <span id="copyright-end"></span>
+                &copy; 2020 - <span id="copyrightEnd"></span>
             </div>
         </div>
     </div>

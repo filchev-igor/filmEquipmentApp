@@ -55,7 +55,7 @@ const toggleActiveLink = () => {
     const path = window.location.pathname;
     const page = path.split("/").pop();
 
-    const element = document.querySelectorAll("a[href='" + page + "']");
+    const element = document.querySelectorAll("a[href*='" + page + "']");
 
     element[0].classList.add("active");
     element[0].setAttribute("aria-current", "page");
