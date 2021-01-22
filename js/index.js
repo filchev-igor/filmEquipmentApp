@@ -20,7 +20,9 @@ class SettingsToggleSwitch {
                 const bgColor = radioElement.dataset.bgColor;
                 const elementLabel = radioElement.labels[0];
 
-                elementLabel.addEventListener("click", () => this.#handleBgColorToggle([bgColor, handledElementsId]));
+                elementLabel.addEventListener("click",
+                    () => this.#handleBgColorToggle([bgColor, handledElementsId])
+                );
             }
         }
 
@@ -37,11 +39,13 @@ class SettingsToggleSwitch {
             const switchConsumerId = switchConsumersId.filter(value => value.includes(numberOrder + tag))
                 .join();
 
-            switchElement.addEventListener("click", () => this.#handleNavbarColorSchemes([numberOrder, switchElement, switchConsumerId]));
+            switchElement.addEventListener("click",
+                () => this.#handleNavbarColorSchemes([numberOrder, switchElement, switchConsumerId])
+            );
         }
 
-        const textToggleElementName = settingsInput["textOnPage"]["supplier"];
-        const textConsumerElementId = settingsInput["textOnPage"]["consumer"];
+        const textToggleElementName = settingsInput["textOnPage"]["color"]["supplier"];
+        const textConsumerElementId = settingsInput["textOnPage"]["color"]["consumer"];
 
         const textToggleElements = document.getElementsByName(textToggleElementName);
 
@@ -49,8 +53,19 @@ class SettingsToggleSwitch {
             const pageToggleElementLabel = pageToggleElement.labels[0];
             const textColor = pageToggleElement.dataset.textColor;
 
-            pageToggleElementLabel.addEventListener("click", () => this.#handleTextColorToggle([textColor, textConsumerElementId]));
+            pageToggleElementLabel.addEventListener("click",
+                () => this.#handleTextColorToggle([textColor, textConsumerElementId])
+            );
         }
+
+        const textSizeSupplierId = settingsInput["textOnPage"]["size"]["supplier"];
+        const textSizeConsumerId = settingsInput["textOnPage"]["size"]["consumer"];
+
+        const textSizeSupplier = document.getElementById(textSizeSupplierId);
+
+        textSizeSupplier.addEventListener("input",
+            (e) => this.#handleTextSize([textSizeSupplier, textSizeConsumerId])
+        );
     }
 
     #handleBgColorToggle(props) {
@@ -115,6 +130,15 @@ class SettingsToggleSwitch {
 
         element.classList.add(textColor);
     }
+
+    #handleTextSize(props) {
+        const [textSizeSupplier, textSizeConsumerId] = props;
+
+        const element = document.querySelector("#" + textSizeConsumerId + " p");
+        element.style.fontSize = textSizeSupplier.value + "rem";
+
+        console.log(textSizeSupplier.value + "rem");
+    }
 }
 
 const NAVBAR_BG_RADIO_NAME = "navbarColorPicker";
@@ -133,6 +157,7 @@ const SECOND_NAVBAR_COLOR_SCHEME_SWITCHER = "secondNavbarColorScheme";
 
 const TEXT_COLOR_RADIO_NAME = "textColorPicker";
 
+const FONT_SIZE_RANGE_ID = "fontSizeRange";
 
 const settingsInput = {
     "radioElements": {
@@ -148,9 +173,15 @@ const settingsInput = {
         "consumers": [FIRST_NAVBAR_CONSUMER_ID, SECOND_NAVBAR_CONSUMER_ID]
     },
     "textOnPage": {
-        "supplier": TEXT_COLOR_RADIO_NAME,
-        "consumer": PAGE_CONSUMER_ID
-    }
+        "color": {
+            "supplier": TEXT_COLOR_RADIO_NAME,
+            "consumer": PAGE_CONSUMER_ID
+        },
+        "size": {
+            "supplier": FONT_SIZE_RANGE_ID,
+            "consumer": PAGE_CONSUMER_ID
+        }
+    },
 };
 
 const settingsToggleSwitch = new SettingsToggleSwitch(settingsInput);
