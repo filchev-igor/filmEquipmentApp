@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Kinotechnika</title>
+    <title>PRADŽIA</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -61,7 +61,7 @@
     </div>
 </nav>
 
-<nav class="navbar navbar-expand-md navbar-light bg-light bg-gradient sticky-top" aria-label="Main navigation" id="secondNavbarConsumer">
+<nav class="navbar navbar-expand-md navbar-light bg-light bg-gradient sticky-top shadow-sm" aria-label="Main navigation" id="secondNavbarConsumer">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -70,7 +70,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav text-uppercase">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="">
+                    <a class="nav-link" href="index.html">
                         PRADŽIA
                     </a>
                 </li>
@@ -134,36 +134,28 @@
 
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
                         <li>
-                            <a class="dropdown-item" href="pages/vaizdo-įrašas.html">ŠIUOLAIKINĖ VIDEO ĮRANGA</a>
+                            <a class="dropdown-item" href="pages/vaizdo-irasas.html">ŠIUOLAIKINĖ VIDEO ĮRANGA</a>
                         </li>
 
                         <li>
-                            <a class="dropdown-item" href="pages/garso-įrašas.html">ŠIUOLAIKINĖ GARSO ĮRANGA</a>
+                            <a class="dropdown-item" href="pages/garso-irasas.html">ŠIUOLAIKINĖ GARSO ĮRANGA</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="pages/šviesos-įranga.html">ŠIUOLAIKINĖ ŠVIESOS ĮRANGA</a>
+                            <a class="dropdown-item" href="pages/sviesos-iranga.html">ŠIUOLAIKINĖ ŠVIESOS ĮRANGA</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href=pages/redagavimas.html">ŠIUOLAIKINĖ MONTAVIMO ĮRANGA</a>
+                            <a class="dropdown-item" href="pages/redagavimas.html">ŠIUOLAIKINĖ MONTAVIMO ĮRANGA</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="pages/šuolaikinės-kino-pramonės-tendencijos.html">ŠIUOLAIKINĖS KINO TENDENCIJOS</a>
+                            <a class="dropdown-item" href="pages/suolaikines-kino-pramones-tendencijos.html">ŠIUOLAIKINĖS KINO TENDENCIJOS</a>
                         </li>
-
                     </ul>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink5" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/lietuvos-kino-industrija.html">
                         LIETUVOJE
                     </a>
-
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink5">
-                        <li>
-                            <a class="dropdown-item" href="pages/lietuvos-kino-industrija.html">LIETUVOS KINO INDUSTRIJA</a>
-                        </li>
-                    </ul>
                 </li>
 
                 <li class="nav-item d-md-none">
@@ -176,177 +168,178 @@
     </div>
 </nav>
 
-<div class="collapse show" id="collapsedSetup">
+<div class="collapse" id="collapsedSetup">
     <div class="card card-body">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h5 class="card-title text-capitalize">
-                            spalvos
-                        </h5>
-                    </div>
+        <div class="row text-center g-4">
+            <div class="col-sm-6 col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">navbar</h5>
 
-                    <div class="col-md-12 d-flex justify-content-between">
-                        <p>
-                            navbar fonas
-                        </p>
+                        <h6 class="card-subtitle mb-2 text-muted">background</h6>
+                        <div class="card-text">
+                            <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-primary" id="navbarColorPicker1" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-primary bg-gradient rounded-circle" for="navbarColorPicker1"></label>
 
-                        <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-primary" id="navbarColorPicker1" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-primary bg-gradient rounded-circle" for="navbarColorPicker1"></label>
+                            <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-secondary" id="navbarColorPicker2" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-secondary bg-gradient rounded-circle" for="navbarColorPicker2"></label>
 
-                        <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-secondary" id="navbarColorPicker2" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-secondary bg-gradient rounded-circle" for="navbarColorPicker2"></label>
+                            <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-success" id="navbarColorPicker3" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-success bg-gradient rounded-circle" for="navbarColorPicker3"></label>
 
-                        <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-success" id="navbarColorPicker3" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-success bg-gradient rounded-circle" for="navbarColorPicker3"></label>
+                            <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-danger" id="navbarColorPicker4" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-danger bg-gradient rounded-circle" for="navbarColorPicker4"></label>
 
-                        <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-danger" id="navbarColorPicker4" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-danger bg-gradient rounded-circle" for="navbarColorPicker4"></label>
+                            <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-warning" id="navbarColorPicker5" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-warning bg-gradient rounded-circle" for="navbarColorPicker5"></label>
 
-                        <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-warning" id="navbarColorPicker5" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-warning bg-gradient rounded-circle" for="navbarColorPicker5"></label>
+                            <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-info" id="navbarColorPicker6" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-info bg-gradient rounded-circle" for="navbarColorPicker6"></label>
 
-                        <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-info" id="navbarColorPicker6" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-info bg-gradient rounded-circle" for="navbarColorPicker6"></label>
+                            <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-light" id="navbarColorPicker7" autocomplete="off" checked>
+                            <label style="width: 2rem; height:2rem;" class="bg-light bg-gradient rounded-circle" for="navbarColorPicker7"></label>
 
-                        <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-light" id="navbarColorPicker7" autocomplete="off" checked>
-                        <label style="width: 2rem; height:2rem;" class="bg-light bg-gradient rounded-circle" for="navbarColorPicker7"></label>
+                            <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-dark" id="navbarColorPicker8" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-dark bg-gradient rounded-circle" for="navbarColorPicker8"></label>
 
-                        <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-dark" id="navbarColorPicker8" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-dark bg-gradient rounded-circle" for="navbarColorPicker8"></label>
+                            <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-white" id="navbarColorPicker9" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-white bg-gradient rounded-circle border" for="navbarColorPicker9"></label>
+                        </div>
 
-                        <input type="radio" class="btn-check" name="navbarColorPicker" data-bg-color="bg-white" id="navbarColorPicker9" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-white bg-gradient rounded-circle border" for="navbarColorPicker9"></label>
-                    </div>
-
-                    <div class="col-md-12 d-md-flex justify-content-between">
-                        <div class="form-check form-switch">
+                        <h6 class="card-subtitle mb-2 text-muted">Color schemes</h6>
+                        <div class="card-text form-check form-switch">
                             <input class="form-check-input" type="checkbox" id="firstNavbarColorScheme">
                             <label class="form-check-label" for="firstNavbarColorScheme">first navbar light scheme</label>
                         </div>
 
-                        <div class="form-check form-switch">
+                        <div class="card-text form-check form-switch">
                             <input class="form-check-input" type="checkbox" id="secondNavbarColorScheme">
                             <label class="form-check-label" for="secondNavbarColorScheme">second navbar light scheme</label>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div class="col-md-12 d-flex justify-content-between">
-                        <p>
-                            footer fonas
-                        </p>
+            <div class="col-sm-6 col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">page</h5>
 
-                        <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-primary" id="footerColorToggleConsumer1" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-primary bg-gradient rounded-circle" for="footerColorToggleConsumer1"></label>
+                        <h6 class="card-subtitle mb-2 text-muted">background</h6>
+                        <div class="card-text">
+                            <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-primary" id="pageColorPicker1" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-primary bg-gradient rounded-circle" for="pageColorPicker1"></label>
 
-                        <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-secondary" id="footerColorToggleConsumer2" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-secondary bg-gradient rounded-circle" for="footerColorToggleConsumer2"></label>
+                            <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-secondary" id="pageColorPicker2" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-secondary bg-gradient rounded-circle" for="pageColorPicker2"></label>
 
-                        <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-success" id="footerColorToggleConsumer3" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-success bg-gradient rounded-circle" for="footerColorToggleConsumer3"></label>
+                            <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-success" id="pageColorPicker3" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-success bg-gradient rounded-circle" for="pageColorPicker3"></label>
 
-                        <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-danger" id="footerColorToggleConsumer4" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-danger bg-gradient rounded-circle" for="footerColorToggleConsumer4"></label>
+                            <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-danger" id="pageColorPicker4" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-danger bg-gradient rounded-circle" for="pageColorPicker4"></label>
 
-                        <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-warning" id="footerColorToggleConsumer5" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-warning bg-gradient rounded-circle" for="footerColorToggleConsumer5"></label>
+                            <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-warning" id="pageColorPicker5" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-warning bg-gradient rounded-circle" for="pageColorPicker5"></label>
 
-                        <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-info" id="footerColorToggleConsumer6" utocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-info bg-gradient rounded-circle" for="footerColorToggleConsumer6"></label>
+                            <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-info" id="pageColorPicker6" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-info bg-gradient rounded-circle" for="pageColorPicker6"></label>
 
-                        <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-light" id="footerColorToggleConsumer7" autocomplete="off" checked>
-                        <label style="width: 2rem; height:2rem;" class="bg-light bg-gradient rounded-circle" for="footerColorToggleConsumer7"></label>
+                            <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-light" id="pageColorPicker7" autocomplete="off" checked>
+                            <label style="width: 2rem; height:2rem;" class="bg-light bg-gradient rounded-circle" for="pageColorPicker7"></label>
 
-                        <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-dark" id="footerColorToggleConsumer8" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-dark bg-gradient rounded-circle" for="footerColorToggleConsumer8"></label>
+                            <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-dark" id="pageColorPicker8" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-dark bg-gradient rounded-circle" for="pageColorPicker8"></label>
 
-                        <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-white" id="footerColorToggleConsumer9" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-white bg-gradient rounded-circle border" for="footerColorToggleConsumer9"></label>
-                    </div>
+                            <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-white" id="pageColorPicker9" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-white bg-gradient rounded-circle border" for="pageColorPicker9"></label>
 
-                    <div class="col-md-12 d-flex justify-content-between">
-                        <p>
-                            page fonas
-                        </p>
+                        </div>
 
-                        <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-primary" id="pageColorPicker1" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-primary bg-gradient rounded-circle" for="pageColorPicker1"></label>
+                        <h6 class="card-subtitle mb-2 text-muted">text color</h6>
+                        <div class="card-text">
+                            <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-primary" id="pageColorToggleConsumer1" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-primary bg-gradient rounded-circle" for="pageColorToggleConsumer1"></label>
 
-                        <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-secondary" id="pageColorPicker2" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-secondary bg-gradient rounded-circle" for="pageColorPicker2"></label>
+                            <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-secondary" id="pageColorToggleConsumer2" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-secondary bg-gradient rounded-circle" for="pageColorToggleConsumer2"></label>
 
-                        <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-success" id="pageColorPicker3" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-success bg-gradient rounded-circle" for="pageColorPicker3"></label>
+                            <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-success" id="pageColorToggleConsumer3" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-success bg-gradient rounded-circle" for="pageColorToggleConsumer3"></label>
 
-                        <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-danger" id="pageColorPicker4" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-danger bg-gradient rounded-circle" for="pageColorPicker4"></label>
+                            <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-danger" id="pageColorToggleConsumer4" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-danger bg-gradient rounded-circle" for="pageColorToggleConsumer4"></label>
 
-                        <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-warning" id="pageColorPicker5" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-warning bg-gradient rounded-circle" for="pageColorPicker5"></label>
+                            <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-warning" id="pageColorToggleConsumer5" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-warning bg-gradient rounded-circle" for="pageColorToggleConsumer5"></label>
 
-                        <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-info" id="pageColorPicker6" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-info bg-gradient rounded-circle" for="pageColorPicker6"></label>
+                            <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-info" id="pageColorToggleConsumer6" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-info bg-gradient rounded-circle" for="pageColorToggleConsumer6"></label>
 
-                        <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-light" id="pageColorPicker7" autocomplete="off" checked>
-                        <label style="width: 2rem; height:2rem;" class="bg-light bg-gradient rounded-circle" for="pageColorPicker7"></label>
+                            <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-light" id="pageColorToggleConsumer7" autocomplete="off" checked>
+                            <label style="width: 2rem; height:2rem;" class="bg-light bg-gradient rounded-circle" for="pageColorToggleConsumer7"></label>
 
-                        <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-dark" id="pageColorPicker8" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-dark bg-gradient rounded-circle" for="pageColorPicker8"></label>
+                            <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-dark" id="pageColorToggleConsumer8" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-dark bg-gradient rounded-circle" for="pageColorToggleConsumer8"></label>
 
-                        <input type="radio" class="btn-check" name="pageColorPicker" data-bg-color="bg-white" id="pageColorPicker9" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-white bg-gradient rounded-circle border" for="pageColorPicker9"></label>
-                    </div>
+                            <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-white" id="pageColorToggleConsumer9" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-white bg-gradient rounded-circle border" for="pageColorToggleConsumer9"></label>
+                        </div>
 
-                    <div class="col-md-12 d-flex justify-content-between">
-                        <p>
-                            text color
-                        </p>
-
-                        <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-primary" id="pageColorToggleConsumer1" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-primary bg-gradient rounded-circle" for="pageColorToggleConsumer1"></label>
-
-                        <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-secondary" id="pageColorToggleConsumer2" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-secondary bg-gradient rounded-circle" for="pageColorToggleConsumer2"></label>
-
-                        <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-success" id="pageColorToggleConsumer3" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-success bg-gradient rounded-circle" for="pageColorToggleConsumer3"></label>
-
-                        <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-danger" id="pageColorToggleConsumer4" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-danger bg-gradient rounded-circle" for="pageColorToggleConsumer4"></label>
-
-                        <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-warning" id="pageColorToggleConsumer5" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-warning bg-gradient rounded-circle" for="pageColorToggleConsumer5"></label>
-
-                        <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-info" id="pageColorToggleConsumer6" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-info bg-gradient rounded-circle" for="pageColorToggleConsumer6"></label>
-
-                        <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-light" id="pageColorToggleConsumer7" autocomplete="off" checked>
-                        <label style="width: 2rem; height:2rem;" class="bg-light bg-gradient rounded-circle" for="pageColorToggleConsumer7"></label>
-
-                        <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-dark" id="pageColorToggleConsumer8" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-dark bg-gradient rounded-circle" for="pageColorToggleConsumer8"></label>
-
-                        <input type="radio" class="btn-check" name="textColorPicker" data-text-color="text-white" id="pageColorToggleConsumer9" autocomplete="off">
-                        <label style="width: 2rem; height:2rem;" class="bg-white bg-gradient rounded-circle border" for="pageColorToggleConsumer9"></label>
-                    </div>
-
-                    <div class="col-md-12 d-flex justify-content-between">
-                        <label for="fontSizeRange" class="form-label">Font size range</label>
-                        <input type="range" class="form-range" min="0.2" max="5" step="0.2" value="1" id="fontSizeRange">
+                        <h6 class="card-subtitle mb-2 text-muted">font size</h6>
+                        <div class="card-text">
+                            <label for="fontSizeRange" class="form-label">Font size range</label>
+                            <input type="range" class="form-range" min="0.2" max="5" step="0.2" value="1" id="fontSizeRange">
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-sm-6 col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">footer</h5>
+
+                        <h6 class="card-subtitle mb-2 text-muted">background</h6>
+                        <div class="card-text">
+                            <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-primary" id="footerColorToggleConsumer1" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-primary bg-gradient rounded-circle" for="footerColorToggleConsumer1"></label>
+
+                            <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-secondary" id="footerColorToggleConsumer2" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-secondary bg-gradient rounded-circle" for="footerColorToggleConsumer2"></label>
+
+                            <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-success" id="footerColorToggleConsumer3" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-success bg-gradient rounded-circle" for="footerColorToggleConsumer3"></label>
+
+                            <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-danger" id="footerColorToggleConsumer4" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-danger bg-gradient rounded-circle" for="footerColorToggleConsumer4"></label>
+
+                            <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-warning" id="footerColorToggleConsumer5" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-warning bg-gradient rounded-circle" for="footerColorToggleConsumer5"></label>
+
+                            <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-info" id="footerColorToggleConsumer6" utocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-info bg-gradient rounded-circle" for="footerColorToggleConsumer6"></label>
+
+                            <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-light" id="footerColorToggleConsumer7" autocomplete="off" checked>
+                            <label style="width: 2rem; height:2rem;" class="bg-light bg-gradient rounded-circle" for="footerColorToggleConsumer7"></label>
+
+                            <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-dark" id="footerColorToggleConsumer8" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-dark bg-gradient rounded-circle" for="footerColorToggleConsumer8"></label>
+
+                            <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-white" id="footerColorToggleConsumer9" autocomplete="off">
+                            <label style="width: 2rem; height:2rem;" class="bg-white bg-gradient rounded-circle border" for="footerColorToggleConsumer9"></label>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container container-sm py-5 bg-white" id="pageConsumer">
+<div class="container-fluid py-5 bg-white" id="pageConsumer">
     <div class="row justify-content-center">
-        <div class="col col-sm-9 col-md-9 col-lg-9 col-xl-8 col-xxl-9">
+        <div class="col col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
             <h1 class="display-5 text-center mb-3">KINAS, KINOTECHNIKA</h1>
 
             <p>
