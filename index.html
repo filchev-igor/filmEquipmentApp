@@ -37,7 +37,7 @@
 </head>
 
 <body>
-<nav class="bg-light bg-gradient navbar navbar-expand-md py-0" aria-label="Hidden navigation during scrolling">
+<nav class="bg-light bg-gradient navbar navbar-expand-md py-0" aria-label="Hidden navigation during scrolling" id="firstNavbarConsumer">
     <div class="container-fluid">
         <div class="collapse navbar-collapse pt-2" id="navbarText">
             <ul class="navbar-nav text-center align-items-center w-100 justify-content-between">
@@ -61,7 +61,7 @@
     </div>
 </nav>
 
-<nav class="navbar navbar-expand-md navbar-light bg-light bg-gradient sticky-top" aria-label="Main navigation">
+<nav class="navbar navbar-expand-md navbar-light bg-light bg-gradient sticky-top" aria-label="Main navigation" id="secondNavbarConsumer">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -219,8 +219,13 @@
 
                     <div class="col-md-12 d-md-flex justify-content-between">
                         <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                            <input class="form-check-input" type="checkbox" id="firstNavbarColorScheme">
+                            <label class="form-check-label" for="firstNavbarColorScheme">first navbar light scheme</label>
+                        </div>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="secondNavbarColorScheme">
+                            <label class="form-check-label" for="secondNavbarColorScheme">second navbar light scheme</label>
                         </div>
                     </div>
 
@@ -229,7 +234,7 @@
                             footer fonas
                         </p>
 
-                        <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="primary" id="footerColorToggleConsumer1" autocomplete="off">
+                        <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-primary" id="footerColorToggleConsumer1" autocomplete="off">
                         <label style="width: 2rem; height:2rem;" class="bg-primary bg-gradient text-white rounded-circle" for="footerColorToggleConsumer1"></label>
 
                         <input type="radio" class="btn-check" name="footerColorPicker" data-bg-color="bg-secondary" id="footerColorToggleConsumer2" autocomplete="off">
