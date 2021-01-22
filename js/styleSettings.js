@@ -5,7 +5,7 @@ class StyleSettings {
         for (const radioElementsName of radioElementsNames) {
             const radioElements = document.getElementsByName(radioElementsName);
 
-            const [handledElementsName,,] = radioElementsName.split(/(?=[A-Z])/);
+            const [handledElementsName, ,] = radioElementsName.split(/(?=[A-Z])/);
 
             const handledElementsId = settingsInput["radioElements"]["consumers"][handledElementsName];
 
@@ -92,8 +92,7 @@ class StyleSettings {
 
             removeClass = "navbar-light";
             addClass = "navbar-dark";
-        }
-        else {
+        } else {
             colorScheme = "light";
 
             removeClass = "navbar-dark";

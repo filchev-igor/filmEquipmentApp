@@ -60,8 +60,7 @@ const toggleActiveLink = () => {
     if (element) {
         element.classList.add("active");
         element.setAttribute("aria-current", "page");
-    }
-    else {
+    } else {
         const element = document.querySelector("a[href='index.html']");
 
         element.classList.add("active");
