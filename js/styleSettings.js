@@ -25,8 +25,6 @@ class StyleSettings {
         for (const switchElementId of switchElementsId) {
             const switchElement = document.getElementById(switchElementId);
 
-            const switchElementLabel = switchElement.labels[0];
-
             const [numberOrder, tag,] = switchElementId.split(/(?=[A-Z])/);
 
             const switchConsumerId = switchConsumersId.filter(value => value.includes(numberOrder + tag))
@@ -66,6 +64,8 @@ class StyleSettings {
         for (const handledElementId of handledElementsId) {
             const element = document.getElementById(handledElementId);
 
+            console.log(handledElementsId);
+
             const removableClass = element.className
                 .split(" ")
                 .filter(value => value.includes("bg-") && value !== "bg-gradient")
@@ -97,8 +97,7 @@ class StyleSettings {
 
             removeClass = "navbar-dark";
 
-            if (numberOrder !== "first")
-                addClass = "navbar-light";
+            addClass = "navbar-light";
         }
 
         switchElement.innerText = "first navbar" + colorScheme + "scheme";
